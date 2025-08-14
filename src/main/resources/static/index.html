@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jazmin Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    
+</head>
+<body>
+    <canvas id="starfield"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cosmic logo with planet and orbit -->
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="20" fill="none" stroke="#f59e0b" stroke-width="2"/>
+                    <circle cx="50" cy="50" r="12" fill="#7c3aed"/>
+                    
+                    <!-- Orbiting elements -->
+                    <circle cx="85" cy="50" r="4" fill="#f59e0b">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="360 50 50" dur="8s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="15" cy="50" r="3" fill="#ec4899">
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 50 50" to="-360 50 50" dur="12s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Central glow -->
+                    <circle cx="50" cy="50" r="8" fill="#f59e0b" opacity="0.3"/>
+                </svg>
+                <span class="logo-text">Jazmin</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#missions">PROYECTS</a></li>
+                    <li><a href="#equipment">SKILLS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+    <!-- Star layers -->
+    <div class="stars-layer"></div>
+    
+    <!-- Floating space orbs -->
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    <div class="space-orb"></div>
+    
+    <!-- Shooting stars -->
+    <div class="shooting-star" style="--delay: 0s; --top: 10%; --left: 10%;"></div>
+    <div class="shooting-star" style="--delay: 1.5s; --top: 30%; --left: 60%;"></div>
+    <div class="shooting-star" style="--delay: 3s; --top: 20%; --left: 80%;"></div>
+    <div class="shooting-star" style="--delay: 4.5s; --top: 60%; --left: 30%;"></div>
+    <div class="shooting-star" style="--delay: 6s; --top: 80%; --left: 70%;"></div>
+    
+        <div class="hero-content">
+            <h1 class="cosmic-title">Jazmin Rojas </h1>
+            <p class="subtitle">Ingenieria & desarollo de entornos VR</p>
+        </div>
+        <a href="#about" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">ABOUT ME </h2>
+        <div class="about-section">
+            <div class="about-hero">
+                <h3>Quien soy, Que hago?</h3>
+                <p class="about-description">
+                    Soy una desarolladora especializada en crear entornos virtualez basados en unity, desarollo de modelado 3D mediante 
+                    blender, desarollo de front-end por medio de python, java, javascript
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="about-card-icon">🔬</span>
+                    <h4>BLENDER</h4>
+                    <p>Investigador directo de creaciones de 3D por cursos, videos asi como tambien la creacion de un modelo 3D desde un 
+                        modelo 2D por medio de imagenes o figuras simples en 2D
+                    </p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">🛰️</span>
+                    <h4>Python</h4>
+                    <p>Investigador y desarollador de proyectos con servidores de flask, uno de los servidores para ejecutar en web paginas y proyectos.</p>
+                </div>
+                
+                <div class="about-card">
+                    <span class="about-card-icon">🌌</span>
+                    <h4>Unity</h4>
+                    <p>Unity proporciona visualización avanzada, simulación, AR/VR y aplicaciones interactivas para acelerar la innovación 
+                        y mejorar los flujos de trabajo. Soluciones de Unity diseñadas para impulsar el crecimiento y los ingresos de tu juego móvil.</p>
+                </div>
+            </div>
+            
+            <div class="achievements-grid">
+                <div class="achievement-item">
+                    <div class="achievement-number">3</div>
+                    <div class="achievement-label">proyects</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">400</div>
+                    <div class="achievement-label">Research Hours</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">2</div>
+                    <div class="achievement-label">Awards Received</div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-number">2</div>
+                    <div class="achievement-label">Active Missions</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="missions" class="missions-section fade-in">
+        <div class="missions-container">
+            <h2 class="section-title">PROYECTS</h2>
+            
+            <div class="mission-tabs">
+                <button class="mission-tab active" data-tab="exploration">Proyectos actuales</button>
+                <button class="mission-tab" data-tab="research">Participaciones</button>
+                <button class="mission-tab" data-tab="discovery">Descubrimientos</button>
+            </div>
+            
+            <div class="mission-content active" id="exploration">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>PSIQUIA VR</h4>
+                        <p>PsiquIA VR es un sistema inteligente compuesto por una aplicación móvil y un  
+                            simulador de realidad virtual que busca prevenir y atender trastornos mentales a 
+                            través de una experiencia de usuario completamente inmersiva, mediante una serie de 
+                            actividades basadas en la estrategia y la resolución de problemas posibilitando el incremento 
+                            de la concentración, serotonina, dopamina y noradrenalina siendo neurotransmisores importantes 
+                            en padecimientos como la depresión, ansiedad, insomnio y el trastorno por déficit de atención e 
+                            hiperactividad (TDAH) ofreciendo detalles sobre el progreso en el tratamiento del paciente
+                            instantáneamente.</p>
+                        <span class="mission-status">Active</span>
+                    </div>
+                    <div class="mission-card">
+                        <h4>Implementacion futura</h4>
+                        <p>Implementacion de metodo runge kutta para conocimiento de aumento de dopamina, serotonina y noradrenalina con el uso de una banda 
+                            de pulsos cardiacos y asi mismo visualizacion completa de el aumento y decrecimiento de estres y aumento de las hormonas de la felicidad. </p>
+                        <span class="mission-status">Ongoing</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="research">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>Talent-tic</h4>
+                        <p>Presentacion de proyecto PSIQUIA VR en El tecnologico de celaya, 
+                            visiualizaciones dentro del entorno con alumnos y personal de la institucion </p>
+                        <span class="mission-status">Active</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mission-content" id="discovery">
+                <div class="mission-grid">
+                    <div class="mission-card">
+                        <h4>Aprendizaje con la psicologia </h4>
+                        <p>Conocimiento nuevo sobre psicologia para el desarollo del proyecto</p>
+                        <span class="mission-status">Confirmed</span>
+                    </div>
+                    <div class="mission-card">
+                        <h4>Articulo cientifico en revista</h4>
+                        <p>Implementacion de publicacion de articulo en revistas de acuerdo al desarollo de psiquiaVR por medio de nuestra asesora</p>
+                        <span class="mission-status">In progress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment" class="fade-in">
+        <h2 class="section-title">SKILLS</h2>
+        <div class="equipment-container">
+            <div class="equipment-item">
+                <span>Python</span>
+            </div>
+            <div class="equipment-item">
+                <span>HTML 5 </span>
+            </div>
+            <div class="equipment-item">
+                <span>JAVA</span>
+            </div>
+            <div class="equipment-item">
+                <span>JAVASCRIPT</span>
+            </div>
+            <div class="equipment-item">
+                <span>REALIDAD VITUAL</span>
+            </div>
+            <div class="equipment-item">
+                <span>MODELADO 3D</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">CONTACT ME</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Principal Investigator Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Institution Email" required>
+            </div>
+            <div class="form-group">
+                <textarea rows="5" placeholder="Research Proposal or Collaboration Inquiry" required></textarea>
+            </div>
+            <button type="submit" class="launch-btn">SUBMIT PROPOSAL</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Research Areas</h3>
+                <ul>
+                    <li><a href="#">Analista</a></li>
+                    <li><a href="#">Analisis de mercado</a></li>
+                    <li><a href="#">Analisis de cliente</a></li>
+                    <li><a href="#">Desarrollo de proyectos</a></li>
+                    <li><a href="#">Uso de VR</a></li>
+                </ul>
+            </div>
+            
+            
+            <div class="footer-section">
+                <h3>Professional Network</h3>
+                <p style="color: var(--star-silver); margin-bottom: 15px;">
+                    Connect with the global space research community
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="ResearchGate">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L3.09 8.26l1.82 1.28L12 4.8l7.09 4.74 1.82-1.28L12 2M12 7L2 12l10 5 10-5-10-5"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="NASA Collaboration">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Academic Network">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 2a8 8 0 0 1 8 8 8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8m0 2a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jazmin Rojas - digital portafolio Design: <a href="https://www.tooplate.com" target="_blank" rel="noopener nofollow">Tooplate</a></p>
+        </div>
+    </footer>
+<script src="/js/script.js"></script>
+</body>
+</html>
